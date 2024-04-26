@@ -1,0 +1,134 @@
+
+@font-face {    /* para inserta una fuente descargada */
+    font-family: 'midi'; /* Nombre de la fuente */
+    src: url('font/MadimiOne-Regular.ttf') format('truetype'); /* Ruta de la fuente */
+}
+
+body {
+    background-image: url("img/fondo.webp");
+    background-size: 100%;
+    font-size: 18px;
+    font-family: 'midi', sans-serif;
+    color: #313131;
+    text-align: justify;
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal del cuerpo */
+}
+
+.whiteBox {
+    background-color:rgb(255, 245, 240);
+    margin: 0 auto;
+    margin-top: 3em;
+    height: 30em;
+    width: 60em;
+    border: 3px solid chocolate;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 97%;
+    
+    /* para ponerlo por debajo del resto de elementos del main */
+    position: relative;
+    z-index: 1;
+
+}
+
+#box2 {
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #a82a04;
+    font-size: 50px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px rgba(87, 87, 87, 0.5);
+}
+
+.greenFont {
+    color: darkseagreen;
+
+}
+
+h2 {
+    color: darkseagreen;
+    font-size: 30px;
+    margin-bottom: -0.5em;
+
+}
+
+h3 {
+    color: #a82a04;
+    font-variant: small-caps;
+
+}
+
+font {
+    color: darkseagreen;
+    font-weight: bold;
+}
+
+form {
+    font-size: 22px;
+    width: 55em; 
+    margin-left: 5em;
+    /*margin: 0 auto;*/
+    position: relative;
+}
+
+#nombre {
+    margin-top: 2em;
+    height: 1.5em;
+    width: 30em;
+}
+
+.cajaCursos {
+    margin-left: 22em;
+    margin-top: -4.5em;
+}
+
+input[type="checkbox"] { /* para cambiar el estilo de los checkbox */
+    width: 1.3em;
+    height: 1.3em;
+    cursor: pointer;
+}
+
+.guardar {
+    font-family: 'midi', sans-serif;
+    margin-top: -7em;
+    margin-left: 13em;
+    background-color:rgb(238, 246, 238);
+    height: 4em;
+    width: 10em;
+    border: 2px solid darkseagreen;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(87, 122, 87);
+    font-size: 16px;
+    text-transform:uppercase;
+    position: fixed;
+    cursor: pointer;
+}
+
+.mostrar {
+    font-family: 'midi', sans-serif;
+    margin-top: 3em;
+    margin-left: 19em;
+    background-color:#ffe6dff5; 
+    height: 4em;
+    width: 30em;
+    border: 2px solid #a82a04;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #a82a04;
+    font-size: 16px;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+
+ul {
+    font-size: medium;
+    list-style-type: circle;
+    margin-left: 5em;
+    width: 53.5em;
+}
+

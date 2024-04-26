@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Registro de estudiantes</title>
+    <link rel="stylesheet" type="text/css" href="registroEstudiantes.css">
+
+</head>
+
+<body>
+
+    <div class="whiteBox">
+        <h1>Registro de Estudiantes</h1>
+
+
+        <!-- Formulario de registro con id único para identificarlo fácilmente con JavaScript -->
+        <form id="registroForm">
+            <!-- Campo para el nombre con un div adyacente para mostrar posibles mensajes de error -->
+            <div>
+                <label for="nombre">
+                    <h2>Nombre:</h2>
+                </label>
+                <input type="text" id="nombre" name="nombre">
+                <div id="errorNombre" class="error"></div>
+            </div>
+            
+            <!-- Opciones de casillas de verificación para intereses con un div para errores -->
+            <div class="cajaCursos">
+                <label>
+                    <h2>Cursos:</h2>
+                </label><br>
+                <input type="checkbox" id="lenguajeMarcas" name="cursos" value="Lenguaje de Marcas">
+                <label for="lenguajeMarcas">Lenguaje de Marcas</label><br>
+                <input type="checkbox" id="programacion" name="cursos" value="Programación">
+                <label for="programacion">Programación</label><br>
+                <input type="checkbox" id="sistemasInformaticos" name="cursos" value="Sistemas Informáticos">
+                <label for="sistemasInformaticos">Sistemas Informáticos</label><br>
+                <input type="checkbox" id="entorno" name="cursos" value="Entorno de desarrollo">
+                <label for="entorno">Entorno de desarrollo</label><br>
+                <input type="checkbox" id="baseDatos" name="cursos" value="Base de datos">
+                <label for="baseDatos">Base de datos</label><br>
+                <input type="checkbox" id="fol" name="cursos" value="Formación y orientación laboral">
+                <label for="fol">Formación y orientación laboral</label><br>
+                <div id="errorCursos" class="error"></div>
+            </div>
+
+        </form>
+
+        <!-- Botón para guardar -->
+        <button type="button" onclick="crearEstudiante()" class="guardar">Guardar estudiante</button>
+
+
+        <!-- Botón para mostrar los estudiantes -->
+        <button type="button" onclick="mostrarEstudiantes()" class="mostrar">Mostrar estudiantes guardados</button>
+        
+
+        <!-- Esto es necesario si uso el código original de mostrarEstudiantes en el js
+            <ul id="listaEstudiantes"></ul> -->
+
+    </div> 
+
+    <script src="registroEstudiantes.js"></script> <!-- Para vincular un documento con código javascript -->
+</body>
+
+</html>
